@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Scott R Weaver's Author Page</title>
+	<meta charset="utf-8" > </meta>
+	<meta name="Description" content="Scott R. Weaver|Author Page"> </meta>
+	<meta name="keywords" content="book"> </meta>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" >
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<!--- <script src="https://cdn.js.net/npm/vue"></script> -->
+	<style type="text/css">
+	<style type="text/css">
+	   .hero {
+	      padding-bottom: 1.5em;
+	    }
+	   .footer {
+	   	  padding-top: 25px;
+	      padding-bottom: 25px;
+	    }
+		.section {
+	   	  padding-top: 15px;
+	      padding-bottom: 15px;
+	      padding-right: 30%;
+	      padding-left: 30%;
+	    }
+	    .row-pict-1 { 
+			background:  rgba(226, 197, 154, 0.6);
+			/* background:url(./images/RABS_twitter_1.png) no-repeat center center; */
+			padding-top: 50px;
+	     	padding-bottom: 20px;
+			padding-right: 20%;
+	        padding-left: 20%;
+		}
+		.row-pict-2 { 
+			background:url(./images/WoodClock_a.jpg) no-repeat center center;
+			padding-top: 26px;
+	     	padding-bottom: 40px;
+		}
+		.row-pict-5 { 
+			padding-top: 20px;
+	     	padding-bottom: 20px;
+			padding-right: 20%;
+	        padding-left: 20%;
+		}
+		.myline {
+			width: 60%;
+			border: 0px solid saddlebrown;
+			margin: 5px auto 5px auto;
+			height: 10px;
+			background: steelblue;
+		}
+		html {
+			background:  rgba(197, 200, 202, 0.8) ;
+			background: url(./images/BG7.jpg) no-repeat center center fixed;
+			margin:    0 auto;
+			max-width: 960px;
+			padding-right: 1%;
+	        padding-left: 1%;
+		}
+		.input {
+			width: 20%;
+		}
+		button {
+			margin: 0 auto 0px auto;
+			display: inline;
+			width: 100px;
+			height: 50px;
+			border: 0 none;
+			font-weight: bold;
+			text-align: center;
+			color: steelblue;
+			cursor: pointer;
+		}
+  	</style>
+</head>
+<body>
+
+<section class="hero is-bold">
+	<div class="row-pict-2">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title is-2 is-uppercase" style="color: saddlebrown;">
+					 Writing Projects</h1>
+				<p>
+					<b> <i> Scott Weaver 360</i> </b>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="vue-app" class="has-text-centered">
+
+	<div class="myline" v-bind:style="{background: mylinecolor}"></div>
+   <div>
+ 	 <button type="button" v-bind:style="{color: mybuttonfont}" v-on:click="updateView(1)"> Fiction</button>
+  	 <button type="button" v-bind:style="{color: mybuttonfont}" v-on:click="updateView(3)"> About</button>
+
+    </div>
+    <div class="myline" v-bind:style="{background: mylinecolor}"></div>
+   <br />
+   	  <div>
+   	    <template v-if="mysel == 1" > 
+		<div class="row-pict-1"> 
+			<br />
+    		<div class="has-text-centered">
+				<h1 class="title is-2 is-uppercase" style="color: dark-gray;">
+						<b> Reach Across a Blue Sky </b> </h1>
+	    	<p class="title is-4"> <b> A Epic Fantasy Trilogy</b> </p>
+ 			<p> <b><i>Could you follow your Queen after she bankrupts your country,  leads your people to a war that cannot be won,  and gives up her throne, 
+				 all in blind hope that your people would be saved two generations after you die?</i></b><br />  <br />
+			<h2 class="title is-3 is-uppercase" style="color:saddlebrown;">
+				 <small>Book 1</small> <b> Angarsk Welcoming </b>
+			</h2>
+			<p> Recalled from royalty school, young Princess Ryneena expects an uneventful journey home. Instead, she finds herself in a strange city and 
+				traveling with her Queen and her Knight protector with questionable loyalty to an auction controlled by enemies. Her Queen's gambit quickly fails 
+				and Ryneena is swept into the center of a conspiracy not of her making. Can she put aside her pride or be captured by the High Silang's scheme?
+  			</p>
+			<br /><br />
+			<p class="title is-4"> The book is in the final re-write phase. </p>
+				<br /><br />
+	    	</div>
+
+    	</div>
+  		</template>
+  	
+		<template v-if="mysel == 3" >
+			<div class="row-pict-5" class="has-text-left"> 
+				<img src="images/HS_wall1_sm.jpg" alt="Picture" height="320" width="222">
+				<br />
+				<p>What started out as an outlet for creativity and frustration has led to an ambitious project and story. Encouraged by a wonderful
+				writer’s group, Angarsk Welcoming is the first book in a series of writing projects. Scott R. Weaver has a background in engineering
+				and business. He lives in the rainy part of America's Pacific Northwest.
+				</p>
+				<br />
+				<img src="images/WritersGroup2_april2018_sm.jpg" alt="Picture" >
+				<p> My writer's group</p>
+			</div>
+ 		</template>
+ 		
+
+      </div>
+      <br />
+
+
+</div> <!--- vue -->
+
+  <div class="column">
+  <section class="has-text-centered">
+   	  <div>
+		<a href="https://twitter.com/scottweaver360?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @scottweaver360</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<br />
+	  </div>
+   </section>
+   </div>
+</div> <!--- columns -->
+
+<footer class="footer has-text-centered" style="background-color: rgba(226, 197, 154, 0.7); color:saddlebrown;">
+ 		<p > <q><b>Oh that my words were written! Oh that they were inscribed in a book!</b></q><br> </p>
+		<p >
+		 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  
+		 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+		<small>&dash;&dash;Job 19:23</small></p>
+</footer>
+ <script src="app.js"></script>
+</body>
+</html>
