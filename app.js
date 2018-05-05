@@ -1,5 +1,16 @@
 'use strict';
 
+Vue.component('modal', {
+	template: '#modal-template'
+})
+
+new Vue({
+	el: '#vue-modal',
+	data: {
+		showModal: false
+	}
+})
+
 new Vue({
 	el: '#vue-app',
 	data: {
