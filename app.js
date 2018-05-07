@@ -4,14 +4,16 @@ Vue.component('modal', {
 	template: '#modal-template'
 })
 
-new Vue({
+var app2 = new Vue({
 	el: '#vue-modal',
 	data: {
+		mylinecolor: 'burlywood',
+		mybuttonfont: 'saddlebrown',
 		showModal: false
 	}
 })
 
-new Vue({
+var app1 = new Vue({
 	el: '#vue-app',
 	data: {
 		mysel: 1,
